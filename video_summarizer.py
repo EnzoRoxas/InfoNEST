@@ -56,7 +56,7 @@ loading_message.empty()  # Remove the "Now Loading..." message
 time.sleep(1)
 
 @st.cache_data(ttl=None, max_entries=80)
-def download_audio(url, output_path="downloads/audio"):
+def download_audio(url, output_path="download/audio"):
     #st.write("Downloading audio from YouTube...")
 
     
@@ -99,7 +99,7 @@ def extract_subtitles(url):
         'format': 'bestaudio/best',
         'writesubtitles': True,  # Enable subtitle download
         'subtitleslangs': ['en'],  # Preferred subtitle language (English)
-        'outtmpl': 'downloads/%(id)s.%(ext)s',
+        'outtmpl': 'download/%(id)s.%(ext)s',
         'quiet': True
     }
 
