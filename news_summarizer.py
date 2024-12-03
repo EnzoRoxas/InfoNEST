@@ -25,7 +25,10 @@ from pathlib import Path
 #from spacy_streamlit import load_model
 
 # Load spaCy's English model and add PyTextRank
-nlp = spacy.load('en_core_web_sm')
+import spacy
+spacy.cli.download("en_core_web_sm")  # This downloads the model
+nlp = spacy.load("en_core_web_sm")    # This loads the model
+
 nlp.add_pipe("textrank", last=True)
 
 # Page config
