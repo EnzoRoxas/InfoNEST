@@ -3,7 +3,7 @@ Pillow
 beautifulsoup4
 newspaper3k
 nltk
-spacy
+spacy==3.5.0
 spacy-streamlit
 yt-dlp
 whisper
@@ -17,7 +17,7 @@ youtube-transcript-api
 pytextrank
 speechrecognition
 googlenewsdecoder
-lxml_html_clean 
+lxml_html_clean
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.5.0/en_core_web_sm-3.5.0-py3-none-any.whl
+pip==24.3.1
 
-spacy>=2.2.0,<3.0.0
-https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.2.0/en_core_web_sm-2.2.0.tar.gz#egg=en_core_web_sm
