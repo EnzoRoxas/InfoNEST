@@ -184,9 +184,9 @@ tinysegmenter==0.3
 tldextract==5.1.2
 tokenizers==0.20.1
 toml==0.10.2
-torch==2.5.1+cu121
-torchaudio==2.5.1+cu121
-torchvision==0.20.1+cu121
+torch==2.5.1
+torchaudio==2.5.1
+torchvision==0.20.1
 tornado==6.4.1
 tqdm==4.66.5
 traitlets==5.14.3
