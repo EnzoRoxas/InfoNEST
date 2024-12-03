@@ -84,7 +84,7 @@ def bart_tokenizer_load():
 #Load the bart model to GPU
 @st.cache_resource
 def bart_model_load():
-    bart_model = AutoModelForSeq2SeqLM.from_pretrained("Angel0J/distilbart-multi_news-12-6", use_safetensors= True)
+    bart_model = AutoModelForSeq2SeqLM.from_pretrained("Angel0J/distilbart-multi_news-12-6")#, use_safetensors= True)
     #bart_model = BartForConditionalGeneration.from_pretrained("Angel0J/distilbart-multi_news-12-6", use_safetensors= True)
     return bart_model
 
