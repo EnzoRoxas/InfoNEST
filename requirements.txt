@@ -19,6 +19,7 @@ pytextrank
 speechrecognition
 googlenewsdecoder
 lxml_html_clean
+safetensors
 
 # SpaCy Dependencies
 spacy==3.7.2
