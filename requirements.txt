@@ -10,7 +10,7 @@ whisper
 pydub
 torch==2.2.0  # Or the appropriate version based on compatibility
 transformers==2.9.0 
-tokenizers==0.7.0
+tokenizers==0.13.2
 requests>=2.26.0
 scipy
 youtube-transcript-api
@@ -31,7 +31,7 @@ srsly==2.4.8
 catalogue==2.0.10
 blis==0.7.11
 pyyaml
-pip==24.3.1
+pip>=21.3.1
 
 # SpaCy Model
 en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
