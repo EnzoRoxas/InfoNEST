@@ -202,7 +202,7 @@ wcwidth==0.2.13
 weasel==0.4.1
 webencodings==0.5.1
 Werkzeug==3.0.6
-wrapt==1.16.0
+wrapt==1.14.0
 youtube-transcript-api==0.6.3
 yt-dlp==2024.11.18
 
