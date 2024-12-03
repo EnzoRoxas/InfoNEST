@@ -20,7 +20,7 @@ lxml_html_clean
 
 # SpaCy Dependencies
 spacy==3.7.2
-thinc==8.0.0  # Compatible with spacy==3.x
+thinc>=8.1.8,<8.3.0
 cymem==2.0.10
 preshed==3.0.9
 murmurhash==1.0.11
