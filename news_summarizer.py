@@ -1,7 +1,4 @@
 import streamlit as st
-st.cache_data.clear()
-
-import streamlit as st
 from PIL import Image
 from bs4 import BeautifulSoup as soup
 from urllib.request import urlopen
@@ -37,6 +34,8 @@ except OSError:
 
 
 nlp.add_pipe("textrank", last=True)
+
+
 
 # Page config
 st.set_page_config(page_title='INFONest🇵🇭: Get the News!📰', page_icon='./Meta/newspaper1.ico')
