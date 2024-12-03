@@ -6,7 +6,7 @@ newspaper3k
 nltk
 spacy-streamlit
 yt-dlp
-whisper
+whisper==1.1.10
 pydub
 torch==2.2.0  # Or the appropriate version based on compatibility
 transformers==4.26.0
