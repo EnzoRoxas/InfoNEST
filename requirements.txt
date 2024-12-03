@@ -17,7 +17,6 @@ pytextrank
 speechrecognition
 googlenewsdecoder
 lxml_html_clean
-https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.5.0/en_core_web_sm-3.5.0-py3-none-any.whl
 
 # Dependencies for SpaCy and its components
 thinc==8.1.12
