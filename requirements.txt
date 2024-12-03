@@ -1,14 +1,14 @@
+# General Dependencies
 streamlit
 Pillow
 beautifulsoup4
 newspaper3k
 nltk
-thinc==8.0.0  # Compatible with spacy==3.2.0
 spacy-streamlit
 yt-dlp
 whisper
 pydub
-torch==1.13.0
+torch==2.2.0  # Or the appropriate version based on compatibility
 transformers
 requests>=2.26.0
 scipy
@@ -17,58 +17,30 @@ pytextrank
 speechrecognition
 googlenewsdecoder
 lxml_html_clean
-streamlit
-Pillow
-beautifulsoup4
-newspaper3k
-nltk
-spacy-streamlit
-yt-dlp
-whisper
-pydub
-torch>=1.12.1
-transformers
-requests
-scipy
-youtube-transcript-api
-pytextrank
-speechrecognition
-googlenewsdecoder
-lxml_html_clean
+
+# SpaCy Dependencies
 spacy>=3.0.0,<4.0.0
-en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
-
-# Dependencies for SpaCy and its components
-thinc==8.1.12
+thinc==8.0.0  # Compatible with spacy==3.x
 cymem==2.0.10
 preshed==3.0.9
 murmurhash==1.0.11
-numpy>=1.15.0,<1.25.0
-wasabi==1.1.3
-srsly==2.4.8
-catalogue==2.0.10
-blis==0.7.11
-pyyaml
-
-# Build tools
-setuptools>=75.6.0
-wheel>=0.40.0
-
-# Dependencies for SpaCy and its components
-cython<3.0,>=0.25
-cymem==2.0.10
-preshed==3.0.9
-murmurhash==1.0.11
-numpy>=1.25.0  # Avoid numpy versions with distutils
+numpy>=1.15.0,<1.25.0  # Compatible range
 wasabi>=0.8.1,<1.1.0
 srsly==2.4.8
 catalogue==2.0.10
 blis==0.7.11
 pyyaml
 
+# SpaCy Model
+en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
+
 # Build tools
 setuptools>=75.6.0
 wheel>=0.40.0
+
+# Additional SpaCy Components
+cython<3.0,>=0.25
+
 
 
 
