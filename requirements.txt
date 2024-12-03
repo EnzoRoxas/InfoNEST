@@ -126,8 +126,8 @@ pyarrow==17.0.0
 pyasn1==0.6.1
 pyasn1_modules==0.4.1
 PyAudio==0.2.14
-pydantic==2.9.2
-pydantic_core==2.23.4
+pydantic==1.7.4
+pydantic_core==1.4.0
 pydeck==0.9.1
 pydub==0.25.1
 pygame==2.6.1
