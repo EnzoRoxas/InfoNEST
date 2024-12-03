@@ -7,6 +7,7 @@ nltk
 spacy-streamlit
 yt-dlp
 whisper
+openai-whisper
 pydub
 torch==2.2.0  # Or the appropriate version based on compatibility
 transformers==4.26.0
