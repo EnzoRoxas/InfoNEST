@@ -8,9 +8,9 @@ spacy-streamlit
 yt-dlp
 whisper
 pydub
-torch>=1.12.1
+torch==1.13.0  # Use a specific version for compatibility
 transformers
-requests
+requests>=2.26.0  # Specify version for stability
 scipy
 youtube-transcript-api
 pytextrank
@@ -33,6 +33,7 @@ pyyaml
 # Build tools
 setuptools>=75.6.0
 wheel>=0.40.0
+
 
 
 
