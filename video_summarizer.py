@@ -26,7 +26,7 @@ def load_whisper_model():
 @st.cache_resource
 def load_bart_modelYT():
     #return AutoModelForSeq2SeqLM.from_pretrained("sshleifer/distilbart-cnn-12-6", use_safetensors= False)
-    return AutoModelForSeq2SeqLM.from_pretrained("Angel0J/distilbart-multi_news-12-6", use_safetensors = True)
+    return AutoModelForSeq2SeqLM.from_pretrained("Angel0J/distilbart-multi_news-12-6")#, use_safetensors = True)
     
 @st.cache_resource
 def load_bart_tokenizerYT():
