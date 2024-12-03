@@ -171,7 +171,7 @@ stack-data==0.6.3
 streamlit==1.39.0
 sympy==1.13.1
 tenacity==9.0.0
-tensorboard==2.10.1
+tensorboard==2.11.0
 tensorboard-data-server==0.6.1
 tensorflow==2.10.1
 tensorflow-io-gcs-filesystem==0.31.0
