@@ -21,6 +21,8 @@ lxml_html_clean
 pip==24.3.1
 https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.5.0/en_core_web_sm-3.5.0-py3-none-any.whl
 
+python-3.10
+
 thinc>=8.1.0
 cymem>=2.0.7
 murmurhash>=1.0.8
