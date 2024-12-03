@@ -103,7 +103,7 @@ networkx==3.2.1
 newspaper3k==0.2.8
 nltk==3.9.1
 numba==0.60.0
-numpy==1.26.3
+numpy==1.23.5
 onnx==1.17.0
 onnxruntime==1.20.1
 openai-whisper==20240930
