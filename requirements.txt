@@ -9,7 +9,7 @@ yt-dlp
 whisper
 pydub
 torch==2.2.0  # Or the appropriate version based on compatibility
-transformers==2.9.0 
+transformers==4.25.1
 tokenizers==0.13.2
 requests>=2.26.0
 scipy
