@@ -24,7 +24,7 @@ thinc>=8.1.8,<8.3.0
 cymem==2.0.10
 preshed==3.0.9
 murmurhash==1.0.11
-numpy>=1.15.0,<1.25.0  # Compatible range
+numpy>=1.25
 wasabi>=0.8.1,<1.1.0
 srsly==2.4.8
 catalogue==2.0.10
