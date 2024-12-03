@@ -9,7 +9,7 @@ yt-dlp
 whisper
 pydub
 torch==2.2.0  # Or the appropriate version based on compatibility
-transformers
+transformers==4.26.0
 requests>=2.26.0
 scipy
 youtube-transcript-api
