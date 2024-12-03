@@ -19,7 +19,7 @@ googlenewsdecoder
 lxml_html_clean
 
 # SpaCy Dependencies
-spacy>=3.0.0,<4.0.0
+spacy==3.7.2
 thinc==8.0.0  # Compatible with spacy==3.x
 cymem==2.0.10
 preshed==3.0.9
