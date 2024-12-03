@@ -10,7 +10,7 @@ whisper
 pydub
 torch==2.2.0  # Or the appropriate version based on compatibility
 transformers==4.26.0
-tokenizers @ https://pypi.org/project/tokenizers/0.12.1/#tokenizers-0.12.1-cp39-cp39-win_amd64.whl
+tokenizers @ https://files.pythonhosted.org/packages/bb/5c/5d93846f34e366e51f0e02d7a10c400c21360bc544963c44cf20755b4c8f/tokenizers-0.12.1-cp39-cp39-win_amd64.whl
 requests>=2.26.0
 scipy
 youtube-transcript-api
