@@ -30,10 +30,10 @@ from pathlib import Path
 # Load spaCy's English model and add PyTextRank
 # Ensure the model is installed
 try:
-    spacy.load("en_core_web_sm")
+    nlp = spacy.load("en_core_web_sm")
 except OSError:
     download("en_core_web_sm")
-    spacy.load("en_core_web_sm")
+    nlp = spacy.load("en_core_web_sm")
 
 
 nlp.add_pipe("textrank", last=True)
