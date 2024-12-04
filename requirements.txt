@@ -194,7 +194,7 @@ typing-extensions==4.10.0
 tzdata==2024.2
 uritemplate==4.1.1
 urllib3==2.2.3
-wasabi==0.8.1
+wasabi==0.9.1
 watchdog==5.0.3
 wcwidth==0.2.13
 weasel==0.4.1
