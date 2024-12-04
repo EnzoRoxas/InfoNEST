@@ -272,24 +272,36 @@ def display_news(list_of_news, news_quantity, stop_words, bart_tokenizer, bart_m
 
 def speech_to_text():
     recognizer = sr.Recognizer()
-    with sr.Microphone() as source:
-        mic_Msg = st.empty()
-        mic_Msg.write("Please Say Your Topic...")
-        audio = recognizer.listen(source)
-        mic_Msg.empty()
-        try:
-            text = recognizer.recognize_google(audio)
-            message = st.empty()
-            message.write(f"Recognized: {text}")
-            time.sleep(3)
-            message.empty()
-            return text
-        except sr.UnknownValueError:
-            st.write("Sorry, I could not understand the audio.")
-            return ""
-        except sr.RequestError:
-            st.write("Could not request results from Google Speech Recognition service.")
-            return ""
+    duration = 5  # Recording duration in seconds
+    sample_rate = 44100  # Sampling rate
+
+    # Inform the user to start speaking
+    mic_Msg = st.empty()
+    mic_Msg.write("Please Say Your Topic...")
+
+    # Record audio using sounddevice
+    audio_data = sd.rec(int(duration * sample_rate), samplerate=sample_rate, channels=1, dtype='int16')
+    sd.wait()  # Wait until recording is complete
+    mic_Msg.empty()
+
+    # Convert the recorded NumPy array to AudioData for speech_recognition
+    audio_bytes = audio_data.tobytes()
+    audio = sr.AudioData(audio_bytes, sample_rate, 2)  # 2 is the width in bytes (16-bit audio)
+
+    # Process the audio with speech recognition
+    try:
+        text = recognizer.recognize_google(audio)
+        message = st.empty()
+        message.write(f"Recognized: {text}")
+        time.sleep(3)
+        message.empty()
+        return text
+    except sr.UnknownValueError:
+        st.write("Sorry, I could not understand the audio.")
+        return ""
+    except sr.RequestError:
+        st.write("Could not request results from Google Speech Recognition service.")
+        return
 
 # Function to convert image to base64 format to use in the HTML img tag
 def image_to_base64(image):
