@@ -19,6 +19,7 @@ from googlenewsdecoder import new_decoderv1
 from transformers import BartTokenizer, BartForConditionalGeneration, BartConfig
 import os
 import time
+import sounddevice as sd
 from spacy.cli import download
 from pathlib import Path
 #import spacy_streamlit
